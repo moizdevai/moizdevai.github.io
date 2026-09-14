@@ -1,0 +1,34 @@
+# ========================================
+# MoizDevAI Portfolio
+# Git Ignore
+# ========================================
+
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+
+# VS Code
+.vscode/
+
+
+# Temporary Files
+*.tmp
+*.temp
+
+
+# Logs
+*.log
+
+
+# Backup Files
+*.bak
+*.swp
+*.swo
+
+
+# Environment Files
+.env
+.env.local
+.env.*.local

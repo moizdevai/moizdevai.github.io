@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MoizDevAI | Python &amp; Django Developer | Generative AI Engineer</title>
+
+    <meta name="description"
+        content="Abdul Moiz Nisar — Python &amp; Django Developer and Generative AI Engineer building backend systems, REST APIs, LLM-powered applications, and practical AI solutions.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MOBILE HEADER
+    ========================== -->
+    <header class="mobile-header">
+
+        <a href="#home" class="mobile-logo">
+            <img src="assets/images/Mobile-logo.svg" alt="MoizDevAI">
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside id="sidebar">
+
+        <div class="sidebar-inner">
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+
+                <a href="#home">
+                    <img src="assets/images/logo.svg" alt="MoizDevAI Logo">
+                </a>
+
+            </div>
+
+
+            <!-- Social Links -->
+            <div class="sidebar-social">
+
+                <!-- GitHub -->
+                <a href="https://github.com/moizdevai" class="social-link" aria-label="GitHub" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.52-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18A10.9 10.9 0 0 1 12 6.1c.97 0 1.94.13 2.85.38 2.18-1.49 3.14-1.18 3.14-1.18.62 1.59.23 2.77.12 3.06.73.81 1.17 1.84 1.17 3.1 0 4.42-2.68 5.39-5.24 5.68.41.36.78 1.08.78 2.18v3.23c0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                    </svg>
+                </a>
+
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/abdul-moiz-nisar-036266320/" class="social-link"
+                    aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.98 1.98 0 1 0 5.25 7a1.98 1.98 0 0 0 0-4ZM20.44 13.41c0-3.47-1.85-5.09-4.32-5.09-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.38v-5.7c0-1.5.29-2.95 2.14-2.95 1.82 0 1.85 1.72 1.85 3.04V20h3.38l.33-6.59Z" />
+                    </svg>
+                </a>
+
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/moizdevai453/" class="social-link" aria-label="Facebook"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M13.5 21v-8h2.67l.4-3.11H13.5V7.9c0-.9.25-1.5 1.53-1.5h1.64V3.62c-.28-.04-1.24-.12-2.36-.12-2.34 0-3.94 1.43-3.94 4.06v2.33H7.72V13h2.65v8h3.13Z" />
+                    </svg>
+                </a>
+
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/moizdevai453/" class="social-link" aria-label="Instagram"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor"
+                            stroke-width="2" />
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                    </svg>
+                </a>
+
+
+                <!-- WhatsApp -->
+                <a href="https://wa.link/v6q9p4" class="social-link" aria-label="WhatsApp" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.85-1.27A9.5 9.5 0 1 0 12 2.5Zm0 17a7.48 7.48 0 0 1-3.8-1.04l-.27-.16-2.88.75.77-2.8-.18-.29A7.5 7.5 0 1 1 12 19.5Zm4.12-5.63c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11-.15.22-.57.71-.7.85-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.8-1.12-.66-.59-1.11-1.31-1.24-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.05-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.57 2.4 3.8 3.37.53.23.95.37 1.27.47.53.17 1.01.15 1.39.09.42-.06 1.3-.53 1.48-1.04.18-.51.18-.94.13-1.04-.05-.1-.2-.16-.42-.27Z" />
+                    </svg>
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="main-navigation">
+
+                <a href="#home" class="nav-link active">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z" />
+                        </svg>
+                    </span>
+                    <span>Home</span>
+                </a>
+
+                <a href="#about" class="nav-link">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                            <path d="M5 20c.7-3.4 3.1-5 7-5s6.3 1.6 7 5" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span>About</span>
+                </a>
+
+                <a href="#resume" class="nav-link">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linejoin="round" />
+                            <path d="M14 3v5h5M8 12h8M8 16h6" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span>Resume</span>
+                </a>
+
+                <a href="#skills" class="nav-link">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span>Skills</span>
+                </a>
+
+                <a href="#services" class="nav-link">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="6" width="18" height="13" rx="2" fill="none" stroke="currentColor"
+                                stroke-width="1.8" />
+                            <path d="M8 6V4h8v2M9 11h6" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span>Services</span>
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3.5 6.5h6l2 2h9v10a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2Z" fill="none"
+                                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span>Projects</span>
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linejoin="round" />
+                            <path d="m5 7 7 6 7-6" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span>Contact</span>
+                </a>
+
+            </nav>
+
+
+            <!-- Sidebar Footer -->
+            <div class="sidebar-footer">
+                <p>Python • Django • REST APIs • AI</p>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main id="main-content">
+
+
+        <!-- =========================
+             HOME
+        ========================== -->
+        <section id="home" class="hero-section">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="hero-intro">
+                        Hi, I'm
+                    </p>
+
+                    <h1>
+                        Abdul Moiz Nisar
+                    </h1>
+
+                    <h2>
+                        Python &amp; Django Developer
+                        <span>|</span>
+                        Generative AI Engineer
+                    </h2>
+
+                    <p class="hero-subtitle">
+                        Backend Development
+                        <span>•</span>
+                        REST APIs
+                        <span>•</span>
+                        LLM Applications
+                        <span>•</span>
+                        AI Solutions
+                    </p>
+
+                    <p class="hero-description">
+                        I build reliable backend systems, REST APIs, web applications, and
+                        practical Generative AI solutions using Python, Django, and
+                        modern LLM technologies.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View My Projects
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+                <span></span>
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+        <section id="about" class="about-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        About Me
+                    </p>
+
+                    <h2>
+                        Building Intelligent
+                        <span>Digital Solutions</span>
+                    </h2>
+
+                    <p class="section-description">
+                        I build modern backend systems, REST APIs, web applications, and
+                        practical Generative AI solutions using Python and Django.
+                    </p>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <div class="about-profile">
+
+                        <div class="profile-top">
+
+                            <div class="profile-avatar">
+                                AM
+                            </div>
+
+                            <div class="profile-heading">
+                                <h3>Abdul Moiz Nisar</h3>
+                                <p>Python &amp; Django Developer | Generative AI Engineer</p>
+                            </div>
+
+                        </div>
+
+                        <div class="profile-divider"></div>
+
+                        <div class="profile-details">
+
+                            <div class="profile-detail">
+                                <span class="detail-label">
+                                    Development Focus
+                                </span>
+
+                                <span class="detail-value">
+                                    Backend • REST APIs • Generative Generative AI
+                                </span>
+                            </div>
+
+                            <div class="profile-detail">
+                                <span class="detail-label">
+                                    Core Stack
+                                </span>
+
+                                <span class="detail-value">
+                                    Python • Django • DRF • LLM APIs
+                                </span>
+                            </div>
+
+                            <div class="profile-detail">
+                                <span class="detail-label">
+                                    Development
+                                </span>
+
+                                <span class="detail-value">
+                                    REST APIs • Web Applications
+                                </span>
+                            </div>
+
+                            <div class="profile-detail">
+                                <span class="detail-label">
+                                    Database
+                                </span>
+
+                                <span class="detail-value">
+                                    SQL • PostgreSQL • SQLite
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+
+                            <span>
+                                Focused on building reliable solutions
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-info">
+
+                        <p class="about-intro">
+                            I'm <strong>Abdul Moiz Nisar</strong>, a developer
+                            focused on building reliable and scalable software
+                            solutions.
+                        </p>
+
+                        <p class="about-text">
+                            I am a Python &amp; Django Developer focused on backend
+                            development, REST APIs, databases, and modern web applications.
+                            I build reliable and practical software solutions with a strong
+                            focus on clean backend architecture and maintainable code.
+                        </p>
+
+                        <p class="about-text">
+                            I enjoy turning ideas and requirements into practical software
+                            solutions with clean structure, reliable backend logic, and
+                            maintainable code.
+                        </p>
+
+                        <p class="about-text">
+                            Alongside backend development, I focus on Generative AI and LLM application
+                            development, including AI API integration, RAG concepts, and
+                            practical AI-powered software solutions.
+                        </p>
+
+
+                        <div class="about-highlights">
+
+                            <div class="about-highlight">
+                                <span class="highlight-value">2+</span>
+
+                                <div class="highlight-info">
+                                    <strong>Years Experience</strong>
+                                    <span>Web Development</span>
+                                </div>
+                            </div>
+
+                            <div class="about-highlight">
+                                <span class="highlight-value">Python</span>
+
+                                <div class="highlight-info">
+                                    <strong>Backend Development</strong>
+                                    <span>Applications &amp; Systems</span>
+                                </div>
+                            </div>
+
+                            <div class="about-highlight">
+                                <span class="highlight-value">Django</span>
+
+                                <div class="highlight-info">
+                                    <strong>Web &amp; API Development</strong>
+                                    <span>Modern Applications</span>
+                                </div>
+                            </div>
+
+                            <div class="about-highlight">
+                                <span class="highlight-value">GenAI</span>
+
+                                <div class="highlight-info">
+                                    <strong>Growing Focus</strong>
+                                    <span>Generative AI & LLM Applications</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-actions">
+
+                            <a href="#resume" class="btn btn-primary">
+                                View My Resume
+                            </a>
+
+                            <a href="#contact" class="btn btn-outline">
+                                Let's Work Together
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESUME
+        ========================== -->
+        <section id="resume" class="resume-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Resume
+                    </p>
+
+                    <h2>
+                        My Professional
+                        <span>Journey</span>
+                    </h2>
+
+                    <p class="section-description">
+                        A brief overview of my experience, featured work,
+                        education, and professional development journey.
+                    </p>
+
+                </div>
+
+
+                <div class="resume-content">
+
+                    <div class="resume-profile">
+
+                        <div class="resume-profile-image">
+                            <img src="assets/images/profile.jpg" alt="Abdul Moiz Nisar">
+                        </div>
+
+                        <h3>
+                            Abdul Moiz Nisar
+                        </h3>
+
+                        <p class="resume-role">
+                            Python &amp; Django Developer | Generative AI Engineer
+                        </p>
+
+                        <p class="resume-profile-text">
+                            Developer focused on building reliable backend systems, REST APIs,
+                            web applications, and practical Generative AI solutions
+                            using Python and Django.
+                        </p>
+
+                        <div class="resume-profile-details">
+
+                            <div class="resume-profile-detail">
+                                <span>Focus</span>
+                                <strong>
+                                    Python • Django • REST APIs
+                                </strong>
+                            </div>
+
+                            <div class="resume-profile-detail">
+                                <span>Experience</span>
+                                <strong>
+                                    2+ Years
+                                </strong>
+                            </div>
+
+                            <div class="resume-profile-detail">
+                                <span>Generative AI Focus</span>
+                                <strong>
+                                    Generative AI & LLM Applications
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <div class="resume-profile-action">
+
+                            <a href="assets/documents/Abdul_Moiz_Nisar_Resume.pdf" class="btn btn-primary" download>
+                                Download Resume
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="resume-details">
+
+                        <div class="resume-block">
+
+                            <div class="resume-block-heading">
+
+                                <span class="resume-block-icon">
+                                    01
+                                </span>
+
+                                <div>
+                                    <p>Experience</p>
+                                    <h3>Professional Experience</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="resume-item">
+
+                                <div class="resume-item-top">
+
+                                    <div>
+                                        <h4>
+                                            Python &amp; Django Developer
+                                        </h4>
+
+                                        <p class="resume-company">
+                                            Backend &amp; Web Development
+                                        </p>
+                                    </div>
+
+                                    <span class="resume-date">
+                                        Python, Django &amp; GenAI
+                                    </span>
+
+                                </div>
+
+                                <p class="resume-item-description">
+                                    Building backend applications, REST APIs, database-driven systems,
+                                    and modern web applications using Python, Django,
+                                    and Django REST Framework.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resume-block">
+
+                            <div class="resume-block-heading">
+
+                                <span class="resume-block-icon">
+                                    02
+                                </span>
+
+                                <div>
+                                    <p>Featured Work</p>
+                                    <h3>Selected Projects</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="resume-item">
+
+                                <div class="resume-item-top">
+
+                                    <div>
+                                        <h4>AI Chatbot System</h4>
+
+                                        <p class="resume-company">
+                                            Python • Django • LLM APIs
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <p class="resume-item-description">
+                                    Built a practical AI-powered chatbot focused
+                                    on processing website content and providing
+                                    relevant responses to users.
+                                </p>
+
+                            </div>
+
+
+                            <div class="resume-item">
+
+                                <div class="resume-item-top">
+
+                                    <div>
+                                        <h4>CMS / Web Application</h4>
+
+                                        <p class="resume-company">
+                                            Python • Django • SQL
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <p class="resume-item-description">
+                                    Developed a database-driven web application
+                                    with backend functionality, structured data,
+                                    and content management features.
+                                </p>
+
+                            </div>
+
+
+                            <div class="resume-item">
+
+                                <div class="resume-item-top">
+
+                                    <div>
+                                        <h4>Meta Pixel Dashboard</h4>
+
+                                        <p class="resume-company">
+                                            Django • Meta API • Dashboard
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <p class="resume-item-description">
+                                    Built a Django-based dashboard for synchronizing
+                                    Meta Pixel event data and displaying useful
+                                    event statistics in a structured interface.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resume-block">
+
+                            <div class="resume-block-heading">
+
+                                <span class="resume-block-icon">
+                                    03
+                                </span>
+
+                                <div>
+                                    <p>Education</p>
+                                    <h3>Academic Background</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="resume-item">
+
+                                <div class="resume-item-top">
+
+                                    <div>
+
+                                        <h4>
+                                            BSCS — Bachelor of Science in Computer Science
+                                        </h4>
+
+                                        <p class="resume-company">
+                                            Virtual University of Pakistan
+                                        </p>
+
+                                    </div>
+
+                                    <span class="resume-date">
+                                        2024 – Present
+                                    </span>
+
+                                </div>
+
+                                <p class="resume-item-description">
+                                    Currently pursuing a Bachelor of Science in
+                                    Computer Science, developing a strong foundation
+                                    in programming, software development, databases,
+                                    and modern computing technologies.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+        <section id="skills" class="skills-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Skills
+                    </p>
+
+                    <h2>
+                        Technical
+                        <span>Expertise</span>
+                    </h2>
+
+                    <p class="section-description">
+                        Practical technical skills focused on Python backend development,
+                        REST APIs, databases, LLM applications, and Generative AI solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <div class="skill-card-header">
+                            <span class="skill-card-number">01</span>
+
+                            <div>
+                                <p class="skill-card-label">Backend</p>
+                                <h3>Backend Development</h3>
+                            </div>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>Python</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>Django</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>Django REST Framework</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>REST API Development</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-card-header">
+                            <span class="skill-card-number">02</span>
+
+                            <div>
+                                <p class="skill-card-label">Database</p>
+                                <h3>Database Development</h3>
+                            </div>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>SQL</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>PostgreSQL</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>SQLite</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>Database Design</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-card-header">
+                            <span class="skill-card-number">03</span>
+
+                            <div>
+                                <p class="skill-card-label">Applications</p>
+                                <h3>Web Application Development</h3>
+                            </div>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>Backend Architecture</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>Authentication &amp; Authorization</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>CRUD Applications</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-card-header">
+                            <span class="skill-card-number">04</span>
+
+                            <div>
+                                <p class="skill-card-label">
+                                    Generative AI &amp; LLM
+                                </p>
+
+                                <h3>Generative AI Engineering</h3>
+                            </div>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>LLM Application Development</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>OpenAI &amp; Anthropic API Integration</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>AI Chatbot Systems</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <span>AI-Powered Applications</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVICES
+        ========================== -->
+        <section id="services" class="services-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Services
+                    </p>
+
+                    <h2>
+                        What I <span>Build</span>
+                    </h2>
+
+                    <p class="section-description">
+                        I build reliable backend systems, REST APIs, web applications, and
+                        practical Generative AI solutions tailored to modern business needs.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+
+                        <div class="service-card-top">
+                            <span class="service-number">01</span>
+
+                            <div class="service-icon">
+                                <span>&lt;/&gt;</span>
+                            </div>
+                        </div>
+
+                        <div class="service-content">
+
+                            <p class="service-label">
+                                Backend
+                            </p>
+
+                            <h3>
+                                Backend Development
+                            </h3>
+
+                            <p>
+                                Build reliable and scalable backend systems
+                                using Python and Django with clean architecture
+                                and maintainable code.
+                            </p>
+
+                        </div>
+
+                        <div class="service-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Backend</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-card-top">
+                            <span class="service-number">02</span>
+
+                            <div class="service-icon">
+                                <span>◈</span>
+                            </div>
+                        </div>
+
+                        <div class="service-content">
+
+                            <p class="service-label">
+                                Web Applications
+                            </p>
+
+                            <h3>
+                                Django Web Applications
+                            </h3>
+
+                            <p>
+                                Develop modern database-driven web applications
+                                with authentication, business logic, dashboards,
+                                and structured backend systems.
+                            </p>
+
+                        </div>
+
+                        <div class="service-tags">
+                            <span>Django</span>
+                            <span>Database</span>
+                            <span>Web Apps</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-card-top">
+                            <span class="service-number">03</span>
+
+                            <div class="service-icon">
+                                <span>API</span>
+                            </div>
+                        </div>
+
+                        <div class="service-content">
+
+                            <p class="service-label">
+                                APIs
+                            </p>
+
+                            <h3>
+                                REST API Development
+                            </h3>
+
+                            <p>
+                                Create secure and structured REST APIs for
+                                web applications, mobile applications,
+                                dashboards, and third-party integrations.
+                            </p>
+
+                        </div>
+
+                        <div class="service-tags">
+                            <span>DRF</span>
+                            <span>REST APIs</span>
+                            <span>Integration</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-card-top">
+                            <span class="service-number">04</span>
+
+                            <div class="service-icon">
+                                <span>GenAI</span>
+                            </div>
+                        </div>
+
+                        <div class="service-content">
+
+                            <p class="service-label">
+                                Generative AI &amp; LLM
+                            </p>
+
+                            <h3>
+                                AI Solutions &amp; Integration
+                            </h3>
+
+                            <p>
+                                Build practical AI-powered applications,
+                                chatbots, and AI integrations that connect
+                                modern AI capabilities with real-world software.
+                            </p>
+
+                        </div>
+
+                        <div class="service-tags">
+                            <span>GenAI</span>
+                            <span>Chatbots</span>
+                            <span>AI APIs</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+             DATA COMES FROM JS
+        ========================== -->
+        <section id="projects" class="projects-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Projects
+                    </p>
+
+                    <h2>
+                        Featured <span>Projects</span>
+                    </h2>
+
+                    <p class="section-description">
+                        A selection of practical projects showcasing my
+                        experience in backend development, web applications,
+                        APIs, dashboards, and AI-powered solutions.
+                    </p>
+
+                </div>
+
+
+                <!-- Projects rendered by js/projects.js -->
+                <div id="projects-container" class="projects-grid"></div>
+
+
+                <div class="projects-view-more">
+
+                    <button id="projects-view-more-btn" class="btn btn-outline" type="button">
+                        View More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+         CONTACT
+         ========================== -->
+        <section id="contact" class="contact-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Contact
+                    </p>
+
+                    <h2>
+                        Let's Work <span>Together</span>
+                    </h2>
+
+                    <p class="section-description">
+                        Have a project idea or need help with a development
+                        task? Feel free to get in touch and let's discuss
+                        your requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-content">
+
+
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+
+                        <div class="contact-intro">
+
+                            <p class="contact-label">
+                                Get In Touch
+                            </p>
+
+                            <h3>
+                                Have a project in mind?
+                            </h3>
+
+                            <p>
+                                I'm available for freelance projects,
+                                backend development, web applications,
+                                REST APIs, dashboards, and practical
+                                AI-powered solutions.
+                            </p>
+
+                        </div>
+
+
+                        <div class="contact-details">
+
+                            <div class="contact-detail">
+
+                                <span class="contact-detail-label">
+                                    Email
+                                </span>
+
+                                <a href="mailto:moizdevai@gmail.com">
+                                    moizdevai@gmail.com
+                                </a>
+
+                            </div>
+
+
+                            <div class="contact-detail">
+
+                                <span class="contact-detail-label">
+                                    Phone
+                                </span>
+
+                                <a href="tel:+923445743146">
+                                    +92344-5743146
+                                </a>
+
+                            </div>
+
+
+                            <div class="contact-detail">
+
+                                <span class="contact-detail-label">
+                                    Location
+                                </span>
+
+                                <span>
+                                    Pakistan
+                                </span>
+
+                            </div>
+
+
+                            <div class="contact-detail">
+
+                                <span class="contact-detail-label">
+                                    Availability
+                                </span>
+
+                                <span>
+                                    Available for freelance projects
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+
+                        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mgaejdbj"
+                            method="POST">
+
+                            <div class="contact-form-row">
+
+                                <div class="form-group">
+
+                                    <label for="contact-name">
+                                        Your Name
+                                    </label>
+
+                                    <input type="text" id="contact-name" name="name" placeholder="Enter your name"
+                                        autocomplete="name" required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="contact-email">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email" id="contact-email" name="_replyto"
+                                        placeholder="Enter your email" autocomplete="email" required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contact-subject">
+                                    Subject
+                                </label>
+
+                                <input type="text" id="contact-subject" name="_subject" placeholder="Project subject"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contact-message">
+                                    Message
+                                </label>
+
+                                <textarea id="contact-message" name="message" rows="6"
+                                    placeholder="Tell me about your project..." required></textarea>
+
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <h3>
+                        Abdul Moiz Nisar
+                    </h3>
+
+                    <p>
+                        Python &amp; Django Developer | Generative AI Engineer
+                    </p>
+
+                    <span>
+                        @moizdevai453
+                    </span>
+
+                </div>
+
+
+                <div class="footer-social">
+
+                    <a href="https://github.com/moizdevai" class="social-link" aria-label="GitHub" target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/abdul-moiz-nisar-036266320/" class="social-link"
+                        aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+
+                    <a href="https://www.instagram.com/moizdevai453/" class="social-link" aria-label="Instagram"
+                        target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+
+                    <a href="https://www.facebook.com/moizdevai453/" class="social-link" aria-label="Facebook"
+                        target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+
+                    <a href="https://wa.link/v6q9p4" class="social-link" aria-label="WhatsApp" target="_blank"
+                        rel="noopener noreferrer">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Abdul Moiz Nisar. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <!-- Only Projects are data-driven -->
+    <script type="module" src="js/projects.js"></script>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2244 @@
+/* ========================================
+   MoizDevAI
+   Responsive Design
+======================================== */
+
+
+/* =========================================================
+   TABLET - GLOBAL
+========================================================= */
+
+@media (max-width: 992px) {
+
+    :root {
+
+        --sidebar-width: 230px;
+
+    }
+
+
+    .sidebar-inner {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .sidebar-logo {
+
+        margin-bottom: 50px;
+
+    }
+
+
+    .sidebar-logo img {
+
+        width: 145px;
+
+    }
+
+
+    #main-content {
+
+        margin-left: var(--sidebar-width);
+
+    }
+
+
+    section {
+
+        padding: 80px 35px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 70px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE - GLOBAL
+========================================================= */
+
+@media (max-width: 768px) {
+
+
+    /* ---------- Desktop Sidebar ---------- */
+
+    #sidebar {
+
+        left: -100%;
+
+        width: 280px;
+
+        transition: left 0.3s ease;
+
+    }
+
+
+    #sidebar.active {
+
+        left: 0;
+
+    }
+
+
+    /* ---------- Mobile Header ---------- */
+
+    .mobile-header {
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 70px;
+
+        padding: 0 20px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        background-color: var(--white-color);
+
+        border-bottom: 1px solid var(--border-color);
+
+        z-index: 900;
+
+    }
+
+
+    /* ---------- Main Content ---------- */
+
+    #main-content {
+
+        margin-left: 0;
+
+    }
+
+
+    section {
+
+        min-height: auto;
+
+        padding: 100px 20px 70px;
+
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero-section {
+
+        min-height: 100vh;
+
+        padding-top: 120px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: clamp(48px, 15vw, 72px);
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 16px;
+
+    }
+
+
+    /* ---------- Hero Buttons ---------- */
+
+    .hero-actions {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    max-width: 280px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    gap: 12px;
+
+}
+
+
+    /* ---------- Section Title ---------- */
+
+    .section-title {
+
+        font-size: 34px;
+
+    }
+
+}
+
+
+/* =========================================================
+   HERO RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+
+        min-height: 100svh;
+
+        padding-top: 100px;
+
+        padding-bottom: 90px;
+
+        align-items: center;
+
+        background-position: center;
+
+    }
+
+
+    .hero-overlay {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(7, 15, 30, 0.94) 0%,
+                rgba(7, 15, 30, 0.82) 55%,
+                rgba(7, 15, 30, 0.94) 100%
+            );
+
+    }
+
+
+    .hero-content {
+
+        max-width: 100%;
+
+        text-align: center;
+
+    }
+
+
+    .hero-intro {
+
+        font-size: 16px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: clamp(40px, 11vw, 62px);
+
+        line-height: 1.08;
+
+        letter-spacing: -2px;
+
+        margin-bottom: 16px;
+
+    }
+
+
+    .hero-content h2 {
+
+        font-size: clamp(22px, 6vw, 30px);
+
+        line-height: 1.35;
+
+        margin-bottom: 14px;
+
+    }
+
+
+    .hero-subtitle {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        max-width: 340px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .hero-subtitle span {
+
+        margin: 0 4px;
+
+    }
+
+
+    .hero-description {
+
+        max-width: 520px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        font-size: 15px;
+
+        line-height: 1.75;
+
+        margin-bottom: 28px;
+
+    }
+
+
+    .hero-actions {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+    }
+
+
+    .hero-actions .btn {
+
+        min-width: 150px;
+
+    }
+
+
+    /* ---------- Scroll Indicator ---------- */
+
+    .scroll-indicator {
+
+        position: absolute;
+
+        left: 50%;
+
+        bottom: 20px;
+
+        width: 22px;
+
+        height: 34px;
+
+        transform: translateX(-50%);
+
+    }
+
+
+    .scroll-indicator span {
+
+        top: 7px;
+
+        width: 3px;
+
+        height: 7px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ABOUT - TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .about-section {
+
+        padding: 90px 35px;
+
+    }
+
+
+    .about-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        max-width: 700px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .about-profile {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .about-info {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* =========================================================
+   ABOUT - MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-section {
+
+        padding: 80px 20px 70px;
+
+    }
+
+
+    /* ---------- Section Heading ---------- */
+
+    .section-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 34px;
+
+        line-height: 1.25;
+
+    }
+
+
+    .section-description {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* ---------- About Content ---------- */
+
+    .about-content {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    /* ---------- Profile Card ---------- */
+
+    .about-profile {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        padding: 25px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .profile-heading h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .profile-heading p {
+
+        font-size: 12px;
+
+    }
+
+
+    /* ---------- About Information ---------- */
+
+    .about-info {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+
+    .about-intro {
+
+        font-size: 19px;
+
+        line-height: 1.55;
+
+    }
+
+
+    .about-text {
+
+        font-size: 14px;
+
+        line-height: 1.8;
+
+    }
+
+
+    /* ---------- Highlights ---------- */
+
+    .about-highlights {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-top: 25px;
+
+    }
+
+
+    /* ---------- Buttons ---------- */
+
+    .about-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+
+        margin-top: 27px;
+
+    }
+
+
+    .about-actions .btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   ABOUT - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-section {
+
+        padding: 70px 18px 60px;
+
+    }
+
+
+    /* ---------- Section Heading ---------- */
+
+    .section-heading {
+
+        margin-bottom: 38px;
+
+    }
+
+
+    .section-label {
+
+        font-size: 12px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 30px;
+
+        letter-spacing: -0.5px;
+
+    }
+
+
+    .section-description {
+
+        font-size: 13px;
+
+    }
+
+
+    /* ---------- About Content ---------- */
+
+    .about-content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+
+    /* ---------- Profile Card ---------- */
+
+    .about-profile {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        padding: 21px 18px;
+
+    }
+
+
+    .profile-top {
+
+        gap: 13px;
+
+    }
+
+
+    .profile-avatar {
+
+        width: 55px;
+
+        height: 55px;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+
+    }
+
+
+    .profile-heading h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .profile-heading p {
+
+        font-size: 11px;
+
+    }
+
+
+    .profile-divider {
+
+        margin: 22px 0 20px;
+
+    }
+
+
+    .profile-details {
+
+        gap: 16px;
+
+    }
+
+
+    .detail-value {
+
+        font-size: 12px;
+
+    }
+
+
+    .profile-status {
+
+        margin-top: 22px;
+
+        padding-top: 16px;
+
+        font-size: 10px;
+
+    }
+
+
+    /* ---------- About Information ---------- */
+
+    .about-info {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+
+    .about-intro {
+
+        font-size: 18px;
+
+    }
+
+
+    .about-text {
+
+        font-size: 13px;
+
+    }
+
+
+    /* ---------- Highlights ---------- */
+
+    .highlight-value {
+
+        min-width: 55px;
+
+        font-size: 15px;
+
+    }
+
+
+    .highlight-info strong {
+
+        font-size: 11px;
+
+    }
+
+
+    .highlight-info span {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESUME - TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .resume-section {
+
+        padding: 90px 35px;
+
+    }
+
+
+    .resume-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        max-width: 700px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .resume-profile {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+        justify-self: center;
+
+    }
+
+
+    .resume-details {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESUME - MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .resume-section {
+
+        padding: 80px 20px 70px;
+
+    }
+
+
+    .resume-content {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        margin: 0 auto;
+
+    }
+
+
+    /* ---------- Profile ---------- */
+
+    .resume-profile {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        padding: 30px 25px;
+
+        border-radius: 12px;
+
+        justify-self: center;
+
+    }
+
+
+    .resume-profile-image {
+
+        width: 135px;
+
+        height: 135px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .resume-profile h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .resume-profile-text {
+
+        font-size: 13px;
+
+    }
+
+
+    .resume-profile-detail {
+
+        padding: 13px 8px;
+
+    }
+
+
+    /* ---------- Right Side ---------- */
+
+    .resume-details {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    .resume-block {
+
+        padding-bottom: 30px;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .resume-block-heading {
+
+        margin-bottom: 22px;
+
+    }
+
+
+    .resume-block-heading h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    /* ---------- Resume Items ---------- */
+
+    .resume-item {
+
+        padding-left: 16px;
+
+    }
+
+
+    .resume-item-top {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+
+    .resume-date {
+
+        align-self: flex-start;
+
+    }
+
+
+    .resume-item-description {
+
+        font-size: 13px;
+
+        line-height: 1.75;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESUME - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .resume-section {
+
+        padding: 70px 18px 60px;
+
+    }
+
+
+    .resume-content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        gap: 38px;
+
+    }
+
+
+    /* ---------- Profile ---------- */
+
+    .resume-profile {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .resume-profile-image {
+
+        width: 115px;
+
+        height: 115px;
+
+        border-width: 3px;
+
+    }
+
+
+    .resume-profile h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .resume-role {
+
+        font-size: 12px;
+
+    }
+
+
+    .resume-profile-text {
+
+        font-size: 12px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .resume-profile-detail {
+
+        padding: 11px 6px;
+
+    }
+
+
+    .resume-profile-detail span {
+
+        font-size: 9px;
+
+    }
+
+
+    .resume-profile-detail strong {
+
+        font-size: 11px;
+
+    }
+
+
+    /* ---------- Right Side ---------- */
+
+    .resume-block {
+
+        padding-bottom: 27px;
+
+        margin-bottom: 27px;
+
+    }
+
+
+    .resume-block-heading {
+
+        gap: 11px;
+
+    }
+
+
+    .resume-block-icon {
+
+        width: 34px;
+
+        height: 34px;
+
+        border-radius: 7px;
+
+        font-size: 10px;
+
+    }
+
+
+    .resume-block-heading p {
+
+        font-size: 9px;
+
+    }
+
+
+    .resume-block-heading h3 {
+
+        font-size: 17px;
+
+    }
+
+
+    /* ---------- Resume Items ---------- */
+
+    .resume-item {
+
+        padding-left: 14px;
+
+    }
+
+
+    .resume-item h4 {
+
+        font-size: 15px;
+
+    }
+
+
+    .resume-company {
+
+        font-size: 11px;
+
+    }
+
+
+    .resume-date {
+
+        font-size: 9px;
+
+    }
+
+
+    .resume-item-description {
+
+        font-size: 12px;
+
+        line-height: 1.75;
+
+    }
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1024px) {
+
+    .about-section,
+    .resume-section,
+    .skills-section {
+
+        padding-left: 35px;
+
+        padding-right: 35px;
+
+    }
+
+
+    .about-section > .container,
+    .resume-section > .container,
+    .skills-section > .container {
+
+        width: 100%;
+
+        max-width: 700px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-content {
+
+        width: 100%;
+
+    }
+
+
+    /* ---------- Resume ---------- */
+
+    .resume-content {
+
+        width: 100%;
+
+    }
+
+
+    /* ---------- Skills ---------- */
+
+    .skills-grid {
+
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+
+    }
+
+
+    .skill-card {
+
+        padding: 21px;
+
+    }
+
+
+    .skill-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .about-section,
+    .resume-section,
+    .skills-section {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+    }
+
+
+    .about-section > .container,
+    .resume-section > .container,
+    .skills-section > .container {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    /* ---------- Skills ---------- */
+
+    .skills-section {
+
+        padding-top: 80px;
+
+        padding-bottom: 70px;
+
+    }
+
+
+    .skills-grid {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+    }
+
+
+    .skill-card {
+
+        padding: 19px;
+
+    }
+
+
+    .skill-card-header {
+
+        margin-bottom: 17px;
+
+    }
+
+
+    .skill-card-header h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .skill-list {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+
+    }
+
+
+    .skill-item {
+
+        min-height: 40px;
+
+        padding: 8px 10px;
+
+    }
+
+
+    .skill-item span {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 480px) {
+
+    .about-section,
+    .resume-section,
+    .skills-section {
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+
+    }
+
+
+    .about-section > .container,
+    .resume-section > .container,
+    .skills-section > .container {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    /* ---------- Skills ---------- */
+
+    .skills-section {
+
+        padding-top: 70px;
+
+        padding-bottom: 60px;
+
+    }
+
+
+    .skills-grid {
+
+        gap: 12px;
+
+    }
+
+
+    .skill-card {
+
+        padding: 17px;
+
+    }
+
+
+    .skill-card-header {
+
+        gap: 11px;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .skill-card-number {
+
+        width: 34px;
+
+        height: 34px;
+
+        border-radius: 7px;
+
+        font-size: 10px;
+
+    }
+
+
+    .skill-card-label {
+
+        font-size: 8px;
+
+    }
+
+
+    .skill-card-header h3 {
+
+        font-size: 15px;
+
+    }
+
+
+    .skill-list {
+
+        gap: 7px;
+
+    }
+
+
+    .skill-item {
+
+        min-height: 38px;
+
+        padding: 7px 9px;
+
+    }
+
+
+    .skill-item span {
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SERVICES RESPONSIVE
+========================================================= */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1024px) {
+
+    .services-section {
+
+        padding: 90px 35px;
+
+    }
+
+
+    .services-grid {
+
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+
+    }
+
+
+    .service-card {
+
+        padding: 22px;
+
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .services-section {
+
+        padding: 80px 20px 70px;
+
+    }
+
+
+    .services-grid {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+    }
+
+
+    .service-card {
+
+        padding: 20px;
+
+    }
+
+
+    .service-card-top {
+
+        margin-bottom: 18px;
+
+    }
+
+
+    .service-number {
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 10px;
+
+    }
+
+
+    .service-icon {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 13px;
+
+    }
+
+
+    .service-content h3 {
+
+        font-size: 17px;
+
+    }
+
+
+    .service-content p {
+
+        font-size: 12px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .service-tags {
+
+        margin-top: 18px;
+
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 480px) {
+
+    .services-section {
+
+        padding: 70px 18px 60px;
+
+    }
+
+
+    .services-grid {
+
+        gap: 12px;
+
+    }
+
+
+    .service-card {
+
+        padding: 18px;
+
+    }
+
+
+    .service-card-top {
+
+        margin-bottom: 16px;
+
+    }
+
+
+    .service-number {
+
+        width: 34px;
+
+        height: 34px;
+
+        border-radius: 7px;
+
+        font-size: 9px;
+
+    }
+
+
+    .service-icon {
+
+        width: 38px;
+
+        height: 38px;
+
+        border-radius: 8px;
+
+        font-size: 12px;
+
+    }
+
+
+    .service-label {
+
+        font-size: 8px;
+
+    }
+
+
+    .service-content h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .service-content p {
+
+        font-size: 11px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .service-tags {
+
+        gap: 6px;
+
+        margin-top: 16px;
+
+    }
+
+
+    .service-tags span {
+
+        padding: 4px 8px;
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================================
+   PROJECTS RESPONSIVE
+========================================================= */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1024px) {
+
+    .projects-section {
+
+        padding: 90px 35px;
+
+    }
+
+
+    .projects-grid {
+
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 24px;
+
+    }
+
+
+    .project-image {
+
+        height: 210px;
+
+    }
+
+
+    .project-content {
+
+        padding: 21px;
+
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .projects-section {
+
+        padding: 80px 20px 70px;
+
+    }
+
+
+    .projects-grid {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .project-image {
+
+        height: 210px;
+
+    }
+
+
+    .project-content {
+
+        padding: 22px;
+
+    }
+
+
+    .project-content h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .project-content > p {
+
+        font-size: 12px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .projects-view-more {
+
+        margin-top: 35px;
+
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 480px) {
+
+    .projects-section {
+
+        padding: 70px 18px 60px;
+
+    }
+
+
+    .projects-grid {
+
+        gap: 13px;
+
+    }
+
+
+    .project-image {
+
+        height: 190px;
+
+    }
+
+
+    .project-category {
+
+        top: 11px;
+
+        right: 11px;
+
+        padding: 5px 8px;
+
+        font-size: 8px;
+
+    }
+
+
+    .project-content {
+
+        padding: 18px;
+
+    }
+
+
+    .project-meta {
+
+        margin-bottom: 9px;
+
+    }
+
+
+    .project-meta span {
+
+        font-size: 9px;
+
+    }
+
+
+    .project-content h3 {
+
+        font-size: 17px;
+
+    }
+
+
+    .project-content > p {
+
+        font-size: 11px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .project-tech {
+
+        gap: 6px;
+
+        margin-top: 16px;
+
+    }
+
+
+    .project-tech span {
+
+        padding: 4px 8px;
+
+        font-size: 8px;
+
+    }
+
+
+    .project-actions {
+
+        margin-top: 18px;
+
+    }
+
+
+    .project-actions .btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   CONTACT RESPONSIVE
+========================================================= */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1024px) {
+
+    .contact-section {
+
+        padding: 90px 35px;
+
+    }
+
+
+    .contact-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        max-width: 700px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .contact-info {
+
+        max-width: 650px;
+
+    }
+
+
+    .contact-form-wrapper {
+
+        max-width: 650px;
+
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+
+        padding: 80px 20px 70px;
+
+    }
+
+
+    .contact-content {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        gap: 35px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .contact-info,
+    .contact-form-wrapper {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    .contact-intro h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .contact-intro > p:last-child {
+
+        font-size: 13px;
+
+    }
+
+
+    .contact-form-wrapper {
+
+        padding: 23px 20px;
+
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 480px) {
+
+    .contact-section {
+
+        padding: 70px 18px 60px;
+
+    }
+
+
+    .contact-content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        gap: 30px;
+
+    }
+
+
+    .contact-intro h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .contact-intro > p:last-child {
+
+        font-size: 12px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .contact-detail {
+
+        padding: 14px 6px;
+
+    }
+
+
+    .contact-detail a,
+    .contact-detail > span:last-child {
+
+        font-size: 12px;
+
+    }
+
+
+    .contact-form-wrapper {
+
+        padding: 20px 17px;
+
+    }
+
+
+    .contact-form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 17px;
+
+    }
+
+
+    .form-group input,
+    .form-group textarea {
+
+        font-size: 11px;
+
+    }
+
+
+    .contact-form .btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER RESPONSIVE
+========================================================= */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1024px) {
+
+    .footer-content {
+
+        gap: 35px;
+
+    }
+
+
+    .footer-brand {
+
+        flex: 1;
+
+        min-width: 0;
+
+    }
+
+
+    .footer-social {
+
+        flex-shrink: 0;
+
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+     .footer {
+
+        margin-left: 0;
+
+    }
+    .footer {
+
+        padding: 38px 20px 22px;
+
+    }
+
+
+    .footer-content {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 100%;
+
+        gap: 22px;
+
+        padding-bottom: 23px;
+
+        text-align: center;
+
+    }
+
+
+    /* ---------- Footer Brand ---------- */
+
+    .footer-brand {
+
+        width: 100%;
+
+        flex: none;
+
+        text-align: center;
+
+    }
+
+
+    .footer-brand h3 {
+
+        margin-bottom: 4px;
+
+    }
+
+
+    /* ---------- Footer Social ---------- */
+
+    .footer-social {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        width: 100%;
+
+        flex-shrink: 0;
+
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 480px) {
+
+    .footer {
+
+        padding: 32px 18px 20px;
+
+    }
+
+
+    .footer-content {
+
+        gap: 20px;
+
+    }
+
+
+    .footer-brand h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .footer-brand p {
+
+        font-size: 10px;
+
+    }
+
+
+    .footer-brand span {
+
+        font-size: 9px;
+
+    }
+
+
+    .footer-social {
+
+        gap: 7px;
+
+    }
+
+
+    .footer-social .social-link {
+
+        min-width: 62px;
+
+        padding: 6px 8px;
+
+        font-size: 8px;
+
+    }
+
+
+    .footer-bottom {
+
+        padding-top: 19px;
+
+    }
+
+
+    .footer-bottom p {
+
+        font-size: 9px;
+
+    }
+
+}
