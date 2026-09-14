@@ -9,7 +9,7 @@ export const projectsData = [
         title: "Python Website Crawler",
         category: "Python Project",
         meta: "Python • BeautifulSoup • SQLite",
-        image: "assets/images/projects/AI Chatbot.png",
+        image: "assets/images/Projects/AI Chatbot.png",
         description:
             "A Python-based website crawling and data extraction system that collects page content, headings, images, links, and HTTP status information and stores the collected data in a structured SQLite database. The project also includes an integrated AI chatbot for interacting with collected website data.",
         technologies: [
@@ -27,7 +27,7 @@ export const projectsData = [
         title: "AuthPay",
         category: "Web Application",
         meta: "Django • Authentication • Stripe",
-        image: "assets/images/projects/authpay.png",
+        image: "assets/images/Projects/authpay.png",
         description:
             "A Django-based e-commerce web application with user authentication, social login, shopping functionality, cart and checkout flow, and Stripe payment integration.",
         technologies: [
@@ -45,7 +45,7 @@ export const projectsData = [
         title: "Django REST API",
         category: "Backend / API",
         meta: "Django • DRF • Authentication",
-        image: "assets/images/projects/api-project.png",
+        image: "assets/images/Projects/api-project.png",
         description:
             "A Django REST Framework backend project featuring user management, authentication, token-based API access, registration, login, user approval, and complete CRUD operations.",
         technologies: [
@@ -63,7 +63,7 @@ export const projectsData = [
         title: "Django CMS",
         category: "Web Application",
         meta: "Django • Python • Database",
-        image: "assets/images/projects/Django-CMS.png",
+        image: "assets/images/Projects/Django-CMS.png",
         description:
             "A Django-based content management web application with a structured backend, database-driven functionality, authentication, and dynamic content management features.",
         technologies: [
@@ -81,7 +81,7 @@ export const projectsData = [
         title: "Django Portfolio",
         category: "Web Application",
         meta: "Django • Python • HTML/CSS",
-        image: "assets/images/projects/practice-portfolio.png",
+        image: "assets/images/Projects/practice-portfolio.png",
         description:
             "A practice portfolio website built with Django to demonstrate backend development, dynamic templates, database integration, and web application structure.",
         technologies: [
